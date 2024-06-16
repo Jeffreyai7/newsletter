@@ -1,0 +1,39 @@
+.success-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 2em 2em;
+}
+
+.hide{
+    display: none;
+}
+
+.info > *{
+margin-bottom: 1em;
+}
+
+.info{
+    margin-top: 5em;
+}
+
+
+
+@media (min-width: 750px){
+    body{
+        background-color: var(--DarkSlateGrey);
+
+    }
+
+    .success-container{
+        width:40%;
+        background-color: var(--White);
+        border-radius: 10px;
+        margin: auto;
+        height: fit-content;
+
+
+    }
+}

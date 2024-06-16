@@ -1,0 +1,111 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    color: var(--CharcoalGrey);
+    border-radius: 10px;
+    background-color: var(--White);
+
+
+}
+.secondflexbox{
+    padding: 2em 1.5em;
+}
+
+.secondflexbox > *, .formInput > * {
+margin-bottom: 1em;
+}
+
+.list{
+    display: flex;
+    gap: .5em;
+}
+
+.list img{
+    align-self: baseline;
+}
+
+.inputstyle{
+    width: 100%;
+    padding: 1em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.errmsg{
+    color: var(--Tomato);
+}
+
+.erralert{
+    border: 1px solid var(--Tomato);
+    width: 100%;
+    padding: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--Tomato);
+}
+
+.btn-container{
+display: flex;
+padding: 1em;
+background-color: var(--DarkSlateGrey);
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+cursor: pointer;
+color: white;   
+}
+
+.btn-container:hover, .btn-container button:hover{
+    background-color: var(--Tomato);
+}
+
+.btn-container button{
+    background-color: var(--DarkSlateGrey);
+    border: none;
+}
+
+.err-container{
+display: flex;
+justify-content: space-between;
+}
+
+button[type="submit"]{
+    white-space: nowrap;
+}
+
+@media (min-width: 750px){
+    body{
+        background-color: var(--DarkSlateGrey);
+
+    }
+    .wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .container{
+        flex-direction: row;
+        width:50%;
+        min-width: 640px;
+        margin: auto;
+        gap: 1em;
+        background-color: var(--White);
+
+    }
+
+    .secondflexbox > *, .formInput > * {
+        margin-bottom: 0.5em;
+        }
+       
+    .secondflexbox{
+        width:60%;
+    }
+     
+    .flexbox1{
+        order: 1;
+        padding: 1em
+    }
+}
